@@ -3108,9 +3108,9 @@ function marblePreggoChance(preggerMult:Number):void {
 	//Capped at 20
 	if(preggerOdds > 15) preggerOdds = 15;
 	//Fertility+ perk bumps odds to 25.
-	if(player.hasPerk("Fertility+") >= 0) preggerOdds = 5;
+	if(player.hasPerk("Fertility+") >= 0) preggerOdds = 25;
 	//If has 'stud perk' always get her pregnant
-	if(player.hasPerk("Marae's Gift - Stud") >= 0) preggerOdds = 20;
+	if(player.hasPerk("Marae's Gift - Stud") >= 0) preggerOdds = 100;
 	preggerOdds *= preggerMult;
 	//GET HER PREGNANT
 	trace("MARBLE PREGGO ODDS: " + preggerOdds);
